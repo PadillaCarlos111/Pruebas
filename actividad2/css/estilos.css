@@ -1,0 +1,33 @@
+
+/*Comentario*/
+th{
+			color:indigo;
+			background-color:grey;
+}
+td{
+	text-align: center;
+}	
+	.sistemas{
+		background-color:greenyellow;
+}
+		.aplicaciones{
+			background-color:darkred;
+}
+		.servicios{
+			background-color:royalblue;
+		}
+		.seguridad{
+			background-color:lightgreen;
+		}
+		.proyecto{
+			background-color:orange;
+		}
+		.ip{
+			background-color:purple;
+		}
+		.optativa{
+			background-color:deeppink;
+		}
+		.ingles{
+			background-color:darkslategrey;
+		}
