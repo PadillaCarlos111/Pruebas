@@ -1,0 +1,47 @@
+body {
+    background: lightgrey;
+    font-family: sans-serif;
+    margin: 10px;
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 300%;
+}
+
+h2 {
+    clear: both;
+}
+
+td {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    text-indent: 2em;
+}
+
+.blanco {
+    background-color: white;
+    font-weight: bold;
+}
+
+.rojo {
+    color: red;
+    font-style: italic;
+}
+
+.grisoscuro {
+    background-color: #777777;
+    color: white;
+}
+
+img {
+    margin-left: 10%;
+    margin-right: 10px;
+    width: 106px;
+    height: 150px;
+    float: left;
+}

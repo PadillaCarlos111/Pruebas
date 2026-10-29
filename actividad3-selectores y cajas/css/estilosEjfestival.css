@@ -1,0 +1,31 @@
+body {
+    background: lightgoldenrodyellow;
+    font-family: sans-serif;
+    margin: 10px;
+}
+
+.caja1{
+    background-color: lightyellow;
+    border: 3px dashed orangered;
+}
+
+.azul {
+    color: blue;
+    font-style: italic;
+}
+
+.caja{
+     border:solid darkblue;
+}
+
+.caja2{
+    border:solid darkblue;
+}
+
+.caja3{
+    background-color: pink;
+}
+
+.verde {
+    color: green;
+    font-style: italic;
