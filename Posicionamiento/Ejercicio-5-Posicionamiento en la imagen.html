@@ -1,11 +1,54 @@
 <!DOCTYPE html>
-<html>
+<!--
+  top, bottom, left y right: para pegar cada texto a una esquina
+  top: 50%: lo baja a la mitad
+  height: auto: alto automático para que no se deforme
+  opacity: transparencia
+-->
+<html lang="es">
 <head>
+<meta charset="UTF-8">
+<title>Colocación de texto en una imagen</title>
 <style>
-.container {
-  position: relative;
+.ejemplo {
+  background-color: #f1f1f1;
+  padding: 1px 8px 8px 8px;
 }
 
+.container {
+  position: relative;   /* ancla para los textos */
+}
+
+/* textos en las esquinas */
+.topleft {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+
+.topright {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+
+.bottomright {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+/* texto en el centro */
 .center {
   position: absolute;
   top: 50%;
@@ -14,7 +57,7 @@
   font-size: 18px;
 }
 
-img { 
+img {
   width: 100%;
   height: auto;
   opacity: 0.3;
@@ -23,12 +66,19 @@ img {
 </head>
 <body>
 
-<h2>Image Text</h2>
-<p>Center text in image:</p>
+<h2>Colocación de texto en una imagen</h2>
+<p>Cómo colocar texto sobre una imagen:</p>
 
-<div class="container">
-  <img src="img/img_5terre.jpg" alt="Cinque Terre" width="1000" height="300">
-  <div class="center">Centered</div>
+<div class="ejemplo">
+  <h3>Ejemplo</h3>
+  <div class="container">
+    <img src="img/img_5terre.jpg" alt="Cinque Terre" width="1000" height="300">
+    <div class="topleft">Top Left</div>
+    <div class="topright">Top Right</div>
+    <div class="bottomleft">Bottom Left</div>
+    <div class="bottomright">Bottom Right</div>
+    <div class="center">Centered</div>
+  </div>
 </div>
 
 </body>

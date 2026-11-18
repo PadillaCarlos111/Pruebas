@@ -1,3 +1,17 @@
+/*
+  font-family: tipo de letra
+  margin: margen de fuera
+  letter-spacing: espacio entre letras
+  font-size: tamaño de letra
+  text-align: justify: texto justificado
+  text-indent: sangría de la primera línea
+  font-weight: bold: negrita
+  font-style: italic: cursiva
+  width y height: ancho y alto
+  float: left: la imagen va a la izquierda y el texto la rodea
+  clear: both: empieza debajo de lo que flota
+*/
+
 body {
     background: lightgrey;
     font-family: sans-serif;
@@ -21,6 +35,8 @@ td {
 p {
     text-align: justify;
     text-indent: 2em;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .blanco {
@@ -41,6 +57,7 @@ p {
 img {
     margin-left: 10%;
     margin-right: 10px;
+    margin-bottom: 10px;
     width: 106px;
     height: 150px;
     float: left;

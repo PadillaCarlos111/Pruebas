@@ -1,9 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--
+  form: formulario (method="post" es la forma de enviar los datos)
+  label: texto del campo (su for tiene que ser igual que el id del input)
+  input type="text": campo de texto
+  name: nombre del dato al enviarlo
+  submit: botón de enviar
+  reset: botón de borrar
+  br: salto de línea
+-->
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Formularios</title>
 </head>
 <body>
 	<h1>Formularios</h1>
@@ -14,14 +23,13 @@
 		<label for="txtNombre">Nombre:</label>	
 		<input type="text" name="txtNombre" id="txtNombre"> <br>
 
-		<label for="txtNombre">Apellido:</label>	
+		<label for="txtApellido">Apellido:</label>	
 		<input type="text" name="txtApellido" id="txtApellido"> <br>
 
 		<input id="btnEnvio" value="Enviar" type="submit">
+		<input type="reset" value="Borrar">
 
 	</form>
-<input type="submit" value="Enviar">
-<input type="reset" value="Borrar">
 
 
 

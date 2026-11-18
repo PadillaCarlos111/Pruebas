@@ -1,141 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--
+  form action="": a dónde se envían los datos (vacío = a la misma página)
+  method="get": los datos se envían en la URL
+  fieldset: agrupa campos en un recuadro
+  legend: título del recuadro
+  email, url, date, time, month, week, number, tel, search, color: tipos de input
+  datetime: los navegadores ya no lo usan y sale como texto
+  required: campo obligatorio
+  autofocus: el cursor empieza en ese campo
+  placeholder: texto de ayuda dentro del campo
+  min y max: número mínimo y máximo
+  select y option: lista desplegable (selected = elegida por defecto)
+  checkbox: casillas, se pueden marcar varias (checked = marcada)
+  radio: solo se puede marcar una de las que tienen el mismo name
+-->
+<html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Formularios</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de prueba de HTML5</title>
 </head>
-
 <body>
+    <h1>Controles de formulario</h1>
 
-	<h1>Formularios</h1>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <p>
+                <label for="txtNombre">Nombre:</label>
+                <input type="text" id="txtNombre" name="txtNombre" required autofocus>
+            </p>
+            <p>
+                <label for="txtEmail">Correo electrónico:</label>
+                <input type="email" id="txtEmail" name="txtEmail" required>
+            </p>
+            <p>
+                <label for="txtURL">URL:</label>
+                <input type="url" id="txtURL" name="txtURL" placeholder="Escribe la URL de tu página web personal">
+            </p>
+            <p>
+                <label for="sCiudad">Ciudad:</label>
+                <select id="sCiudad" name="sCiudad">
+                    <option value="AL">ALMERÍA</option>
+                    <option value="CA">CÁDIZ</option>
+                    <option value="CO">CÓRDOBA</option>
+                    <option value="GR">GRANADA</option>
+                    <option value="HU">HUELVA</option>
+                    <option value="JA">JAÉN</option>
+                    <option value="MA">MÁLAGA</option>
+                    <option value="SE" selected>SEVILLA</option>
+                </select>
+            </p>
+        </fieldset>
 
+        <fieldset>
+            <legend>Otros datos</legend>
+            <p>
+                <label for="txtFecha">Fecha:</label>
+                <input type="date" id="txtFecha" name="txtFecha">
+            </p>
+            <p>
+                <label for="txtTiempo">Tiempo:</label>
+                <input type="time" id="txtTiempo" name="txtTiempo">
+            </p>
+            <p>
+                <label for="txtFechaHora">Fecha y hora:</label>
+                <input type="datetime" id="txtFechaHora" name="txtFechaHora">
+            </p>
+            <p>
+                <label for="txtMes">Mes:</label>
+                <input type="month" id="txtMes" name="txtMes">
+            </p>
+            <p>
+                <label for="txtSemana">Semana:</label>
+                <input type="week" id="txtSemana" name="txtSemana">
+            </p>
+            <p>
+                <label for="txtNumero">Número (min -10, max 10):</label>
+                <input type="number" id="txtNumero" name="txtNumero" min="-10" max="10">
+            </p>
+            <p>
+                <label for="txtTelefono">Teléfono:</label>
+                <input type="tel" id="txtTelefono" name="txtTelefono">
+            </p>
+            <p>
+                <label for="txtBusqueda">Término de búsqueda:</label>
+                <input type="search" id="txtBusqueda" name="txtBusqueda">
+            </p>
+            <p>
+                <label for="txtColor">Color favorito:</label>
+                <input type="color" id="txtColor" name="txtColor">
+            </p>
+        </fieldset>
 
+        <fieldset>
+            <legend>Otros controles</legend>
+            <p>
+                Aficiones
+                <input type="checkbox" id="chkCine" name="chkCine" value="1" checked>
+                <label for="chkCine">Cine</label>
+                <input type="checkbox" id="chkDeporte" name="chkDeporte" value="1">
+                <label for="chkDeporte">Deporte</label>
+            </p>
+            <p>
+                Forma de pago<br>
+                <input type="radio" id="rVisa" name="radFormaPago" value="V">
+                <label for="rVisa">Visa</label>
+                <input type="radio" id="rAmerican" name="radFormaPago" value="A">
+                <label for="rAmerican">American Express</label>
+                <input type="radio" id="rMaster" name="radFormaPago" value="M">
+                <label for="rMaster">MasterCard</label>
+            </p>
+        </fieldset>
 
-	<form taget="_blank" method="post">
-		<fieldset>
-			<legend> Datos personales</legend>
-			<p>
-				<label for="txtNombre">Nombre:</label>
-				<input type="text" id="txtNombre"
-				name="txtNombre" required autofocus>
-			</p>
-
-			<p>
-				<label for="txtCorreo">Correo Electronicó:</label>
-				<input type="email" id="txtEmail"
-				name="txtEmail" required >
-			</p>
-
-			<p>
-				<label for="txtURL">URL:</label>
-				<input type="url" id="txtURL"
-				name="txtURL" placeholder="Inserta la URL de tu página WEB" size="90">
-			</p>
-
-			<p>
-				<label for="sCiudad">Ciudad:</label>
-				<select id="sCiudad" name="sCiudad">
-					<option value="CO">CÓRDOBA</option>
-					<option value="SE" SELECTED>SEVILLA</option>
-					<option value="CA">CÁDIZ</option>
-					<option value="MA">MALAGA</option>
-					<option value="GR">GRANADA</option>
-					<option value="AL">ALMERÍA</option>
-					<option value="JA">JÁEN</option>
-					<option value="HU">HUELVA</option>
-				</select>
-			</p>
-		</fieldset>
-	</form>
-
-
-
-	<form taget="_blank" method="post">
-		<fieldset>
-			<legend> Otros datos </legend>
-
-			<p>
-				<label for="txtFecha">Fecha:</label>
-				<input type="date" id="txtFecha"
-				name="txtFecha" required>
-			</p>
-
-			<p>
-				<label for="txtTiempo">Tiempo:</label>
-				<input type="time" id="txtTiempo"
-				name="txtTiempo" required>
-			</p>
-
-			<p>
-				<label for="txtFechayhora">Fecha y hora:</label>
-				<input type="datetime" id="txtFechayhora"
-				name="txtFechayhora" required>
-			</p>
-
-			<p>
-				<label for="txtmes">Mes:</label>
-				<input type="month" id="txtmes"
-				name="txtmes" required>
-			</p>
-
-			<p>
-				<label for="txtSemana">Semana:</label>
-				<input type="week" id="txtSemana"
-				name="txtSemana" required>
-			</p>
-
-			<p>
-				<label>Numero</label>
-				<input type="number" max="10" min="-10" size="8">
-			</p>
-
-			<p>
-				<label for="txtTelefono">Telefono:</label>
-				<input type="tel" id="txtTelefono"
-				name="txtTelefono" required>
-			</p>
-
-			<p>
-				<label for="txtTérmino de búsqueda">Término de búsqueda:</label>
-				<input type="search" id="txtTérmino de búsqueda"
-				name="txtTérmino de búsqueda" required>
-			</p>
-
-			<p>
-				<label for="txtColor favorito">Color favorito:</label>
-				<input type="color" id="txtColor favorito"
-				name="txtColor favorito" required>
-			</p>
-		</fieldset>
-	</form>
-
-
-
-	<form taget="_blank" method="post">
-		<fieldset>
-			<legend> Otros controles  </legend>
-			<p>
-				Aficiones
-				<input type="checkbox" name="chkAficion1" value="1" checked>Cine
-				<input type="checkbox" name="chkAficion2" value="1" >Deporte
-			</p>
-
-			<p>
-				<p>Formas de pago</p>
-
-				<input type="radio" name="radioFormasdepago1" value="V" >Visa
-				<input type="radio" name="radioFormasdepago1" value="A" >American Express
-				<input type="radio" name="radioFormasdepago1" value="M" >MasterCard
-			</p>
-		</fieldset>
-	</form>		
-
-
-
-<input type="submit" value="Enviar">
-
-<input type="reset" value="Borrar">
-
+        <!-- Los botones tienen que ir DENTRO del form para que funcionen -->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </p>
+    </form>
 </body>
 </html>

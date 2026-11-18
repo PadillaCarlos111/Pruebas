@@ -1,14 +1,32 @@
+/*
+  selector *: se aplica a todo
+  box-sizing: border-box: el ancho incluye el padding y el borde
+  padding: espacio de dentro
+  border: grosor, tipo (solid, dashed) y color del borde
+  border-radius: esquinas redondeadas
+  box-shadow: sombra
+  position: absolute: coloca la caja donde digas con top, right...
+  p.bola: los p con class="bola"
+  border-image: imagen como borde
+  background-clip: hasta dónde se pinta el fondo
+*/
+
 *{
 	box-sizing:border-box;
 	padding: 0;
 	margin: 0;
 }
+/* espacio debajo de cada párrafo */
+p{
+	margin-bottom: 15px;
+}
+
 .caja1{
 	margin:2%;
 	padding: 20px;
 	width: 40%;
 	text-align: justify;
-	background-color: yellow;
+	background-color: #fef0a1;
 	border: 10px solid #e7a219;
 }
 
@@ -21,7 +39,7 @@
 .caja2{
 	margin:2%;
 	padding: 20px;
-	background-color: yellow;
+	background-color: #fef0a1;
 	border: 3px dashed #000000;
 	border-radius: 10px 50px;
 	padding: 20px;
