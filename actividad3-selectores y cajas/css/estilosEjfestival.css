@@ -77,21 +77,12 @@ nav li a:hover {
 }
 
 
-/* CAJAS A LA IZQUIERDA Y ASIDE A LA DERECHA */
+/* CAJAS */
 
 .centrado {
     float: left;
     width: 75%;
 }
-
-aside {
-    float: right;
-    width: 22%;
-    padding: 10px;
-    background-color: white;
-    border: 2px solid #f0b7b7;
-}
-
 
 /* CAJAS */
 
@@ -142,21 +133,6 @@ aside {
     width: 80px;
     margin-left: 10px;
 }
-
-
-/* ASIDE */
-
-aside h2 {
-    font-family: Arial, sans-serif;
-    font-size: 120%;
-    color: blue;
-}
-
-aside li {
-    font-family: Arial, sans-serif;
-    margin-bottom: 8px;
-}
-
 
 /* PIE DE PÁGINA */
 
