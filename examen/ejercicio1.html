@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Club Senderista Sierra Norte</title>
+</head>
+<body>
+	<header>
+
+<!-- 
+
+
+Ejercicio 1
+
+
+-->
+
+	<h1>Club Senderista Sierra Norte</h1>
+	</header>
+			<ul>
+        <li><a href=>Rutas</a></li>
+        <li><a href=>Calendario</a></li>
+        <li><a href=>Inscripción</a></li>
+   			</ul>
+   	<h2>Póximas rutas</h2>
+<p><img src="img/montana.svg"></p>
+<p>Paisaje de la Sierra Norte</p>
+
+<ul style="list-style-type:square;">
+		<li type="1">Ruta del Cares
+			<ol>
+				<li type="">Hora de salida:8:00
+				<li>Material: botas de montaña y agua	
+			</ol>
+
+		<li type="1">La Pedriza 
+
+		<li type="1">Camino Schmid
+	</ul>
+<p>Mas informacion sobre este deporte en <u><a href="https://es.wikipedia.org/wiki/Senderismo">Wikipedia</a></u></p>
+
+
+
+
+
+
+
+
+<!-- 
+
+
+Ejercicio 2
+
+
+-->
+<h2>Calendario de salidas</h2>
+
+	<table border="2">
+		<caption>Aprendiendo sobre tablas</caption>
+		<tr>
+			<th>Ruta</th>
+			<th>Dificultad</th>
+			<th>Fecha</th>
+			<th>Distancia (km)</th>
+		</tr>
+
+		<tr>
+			<td>Ruta del Cares</td>
+			<td>Media</td>
+			<td>12/12/2026</td>
+			<td>24</td>
+		</tr>
+
+		<tr>
+			<td>La Pedriza</td>
+			<td>Alta</td>
+			<td>09/01/2027</td>
+			<td>10</td>
+		</tr>
+
+		<tr>
+			<td>Camino Schmid</td>
+			<td>Baja</td>
+			<td>23/01/2027</td>
+			<td>8</td>
+		</tr>
+
+		<tr>
+			<td colspan="3">Total de kilómetros</td>
+			<td>42</td>
+		</tr>
+	</table>
+
+
+
+<!-- 
+
+
+Ejercicio 3
+
+
+-->
+
+<h2>Inscripción</h1>
+
+    <form action="" method="get">
+        <fieldset>
+            <legend>Datos de inscripcion</legend>
+            <p>
+                <label for="txtNombre">Nombre:</label>
+                <input type="text" id="txtNombre" name="txtNombre" required autofocus>
+            </p>
+
+            <p>
+                <label for="txtEmail">Correo electrónico:</label>
+                <input type="email" id="txtEmail" name="txtEmail" required>
+            </p>
+
+            <p>
+                <label for="sRuta">Ruta elegida:</label>
+                <select id="sRuta" name="sRuta">
+                    <option value="Ca">Ruta del Cares</option>
+                    <option value="Pe">La Pedriza</option>
+                    <option value="Sc">Camino Schmid</option>
+                </select>
+            </p>
+        </fieldset>
+  <p>
+                Nivel
+                <input type="radio" id="rPrincipiante" name="radNivel" value="P">
+                <label for="rPrincipiante">Principiante</label>
+                <input type="radio" id="rIntermedio" name="radNivel" value="I">
+                <label for="rIntermedio">Intermedio</label>
+                <input type="radio" id="rExperto" name="radNivel" value="E">
+                <label for="rExperto">Experto</label>
+  </p>
+
+   <p>
+                Material que necesita:
+                <input type="checkbox" id="chkBaston" name="chkBaston" value="1">
+                <label for="chkBaston">Bastones</label>
+                <input type="checkbox" id="chkFrontal" name="chkFrontal" value="1">
+                <label for="chkFrontal">Frontal</label>
+            </p>
+<p> 
+	Comentarios:
+</p>
+
+
+
+
+ <input type="checkbox" id="chkCondi" name="chkCondi" value="1">
+                <label for="chkCondi">Acepto las condiciones</label>
+</p>
+<p>
+		<input id="btnEnvio" value="Enviar" type="submit">
+		<input type="reset" value="Borrar">
+</p>
+
+</body>
+</html>
